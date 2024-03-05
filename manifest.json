@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "TailwindCSS Dark Mode Toggle",
+    "version": "1.0",
+    "description": "Toggles a 'dark' class on document.body when a keyboard shortcut is pressed. Perfect for developing light and dark Tailwind color schemes.",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "scripts/content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_icon": "images/logo.png",
+        "default_popup": "pages/popup.html",
+        "default_title": "TailwindCSS Dark Mode Toggle"
+    },
+    "icons": {
+        "16": "images/logo.png",
+        "48": "images/logo.png",
+        "128": "images/logo.png"
+    }
+}

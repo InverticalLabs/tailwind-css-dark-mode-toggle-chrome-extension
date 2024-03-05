@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>TailwindCSS Dark Mode Toggle</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/output.css">
+
+</head>
+<body class="bg-gray-300 w-[400px]">
+    <div class="bg-white flex flex-col justify-center items-center w-full max-w-[400px] p-10">
+
+        <!-- Logo -->
+        <img src="../images/logo.png" class="h-[40px] rounded-full mb-4">
+
+        <!-- Header -->
+        <h1 class="font-semibold text-[20px] text-center mb-3">
+            TailwindCSS Dark Mode Toggle
+        </h1>
+
+        <!-- Instructions -->
+        <p class="text-gray-700 text-[15px] text-center mb-6">
+
+            <!-- Text -->
+            To switch between light and dark mode, simply press the
+            key that you define below. Note that the key must be a
+            recognized JavaScript
+
+            <!-- Link -->
+            <a target="_blank"
+               class="text-sky-600 hover:text-red-600"
+               href="https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_key_values">
+               KeyboardEvent.key.
+            </a>
+
+        </p>
+
+        <!-- Information -->
+        <div class="bg-gray-50 border border-dashed flex items-center w-full py-3 px-5 mb-6">
+
+            <!-- Label -->
+            <label class="text-[15px] whitespace-nowrap pr-6">
+                KeyboardEvent Key:
+            </label>
+
+            <!-- Page Number -->
+            <input type="text"
+                   id="toggle_key"
+                   placeholder="e.g. F5"
+                   class="border text-gray-700 text-[16px] w-[125px] rounded px-3 py-1">
+
+        </div>
+
+        <!-- Action -->
+        <button id="save"
+                class="bg-sky-600 disabled:bg-sky-600/60 font-semibold text-[13px] text-white uppercase cursor-pointer disabled:cursor-not-allowed rounded min-w-[125px] py-[6px]">
+
+            <!-- Text -->
+            Save
+
+        </button>
+
+        <!-- Script -->
+        <script src="../scripts/popup.js"></script>
+
+    </div>
+</body>
+</html>
